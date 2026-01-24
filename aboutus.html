@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="nav.js"></script>
+</head>
+
+<body data-page="about">
+
+<header>
+    <div class="header-left" onclick="goHome()">
+        <img src="logo.png" alt="Logo">
+    </div>
+
+    <nav class="header-right">
+        <ul>
+            <li onclick="navigate('home.html')" id="home">Home</li>
+            <li onclick="navigate('televisions.html')" id="tv">Televisions</li>
+            <li onclick="navigate('aboutus.html')" id="about">About Us</li>
+        </ul>
+    </nav>
+</header>
+
+<main class="about-split">
+    <!-- LEFT IMAGE -->
+    <div class="about-left"></div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="about-right">
+        <h1>About us.</h1>
+
+        <p class="intro">
+            We aim to develop a website that presents the reality of household energy consumption
+            and raises public awareness about energy efficiency.
+        </p>
+
+        <p>
+            By visualising official energy consumption data, this website helps users better understand
+            how different appliances, brands, and technologies impact electricity usage.
+        </p>
+
+        <p>
+            The goal is to support informed decision-making, encourage energy-efficient choices,
+            and contribute to reducing energy costs and environmental impact.
+        </p>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 Nguyen Ngoc Bao Chau | GenAI used to assist with code generation</p>
+</footer>
+
+</body>
+</html>
