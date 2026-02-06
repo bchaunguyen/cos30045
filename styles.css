@@ -10,7 +10,7 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-/*HEADER (DÙNG CHUNG)*/
+/*HEADER*/
 header {
     position: absolute;           
     top: 0;
@@ -103,46 +103,59 @@ body.home-page main {
 }
 
 /*TELEVISIONS PAGE*/
+body[data-page="televisions"] {
+    background-color: #5F9598; 
+}
+
+/* main */
 body[data-page="televisions"] main {
-    position: relative;
-
-    background: url("aboutus.jpg") no-repeat center center;
-    background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #132440;
+    padding: 120px 40px 60px;
+    display: block;
+    height: auto;
 }
 
-/*overlay*/
-body[data-page="televisions"] main::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.4);
-    z-index: 0;
-}
-
-body[data-page="televisions"] main > * {
-    position: relative;
-    z-index: 1;
-}
-
-/*content box*/
+/* content box */
 body[data-page="televisions"] .content-box {
-    background: rgba(255,255,255,0.9);
-    padding: 30px 40px;
-    border-radius: 10px;
-    max-width: 700px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    background: #F3F4F4;
+    padding: 40px;
+    border-radius: 12px;
+
+    max-width: 1100px;
+    margin: 0 auto 40px;
+
+    text-align: left;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
-body.home-page main,
-body[data-page="televisions"] main {
-    height: calc(100vh - 70px - 45px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+body[data-page="televisions"] section {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F3F4F4;
+}
+
+
+/* HEADINGS */
+body[data-page="televisions"] h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+body[data-page="televisions"] p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* charts sizing */
+body[data-page="televisions"] .chart-img {
+    width: 100%;
+    max-width: 600px;     
+    height: auto;         
+    display: block;
+    margin: 20px auto 30px;
+    border-radius: 6px;
 }
 
 /*ABOUT US PAGE*/
@@ -165,6 +178,7 @@ body[data-page="about"] header {
 body[data-page="about"] .header-right li {
     color: white;
 }
+
 
 /* LEFT IMAGE */
 body[data-page="about"] .about-left {
@@ -224,6 +238,11 @@ body {
 main {
     flex: 1;
     display: flex;
+}
+
+/* footer tv */
+body[data-page="televisions"] footer p {
+    color: #fff;
 }
 
 
