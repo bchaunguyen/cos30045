@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="nav.js"></script>
 </head>
-<body class="home-page">
+<body data-page="home" class="home-page">
 
 
 <header>
@@ -16,7 +16,7 @@
 
     <nav class="header-right">
         <ul>
-            <li class="active" onclick="navigate('home.html')" id="home">Home</li>
+            <li class="active" onclick="navigate('index.html')" id="home">Home</li>
             <li onclick="navigate('televisions.html')" id="tv">Televisions</li>
             <li onclick="navigate('aboutus.html')" id="about">About Us</li>
         </ul>
@@ -26,10 +26,10 @@
 <main>
     <div class="content-box">
         <h1>Television Energy Consumption</h1>
-<p>
-This website presents data visualisations of energy consumption for TV. Using Australian Government data, the site allows users to easily compare the
-energy usage of common household electrical appliances.
-</p>
+    <p>
+        This website presents energy consumption data for televisions using Australian Government data.
+        It helps households understand how different TV technologies, sizes, and brands affect electricity use.
+    </p>
     </div>
 </main>
 
