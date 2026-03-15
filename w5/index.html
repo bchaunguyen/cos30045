@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="nav.js"></script>
+
+</head>
+<body data-page="home" class="home-page">
+
+
+<header>
+     <div class="header-left" onclick="goHome()">
+        <img src="logo.png" alt="Logo">
+    </div>
+
+    <nav class="header-right">
+        <ul>
+            <li class="active" onclick="navigate('index.html')" id="home">Home</li>
+            <li onclick="navigate('televisions.html')" id="tv">Televisions</li>
+            <li onclick="navigate('aboutus.html')" id="about">About Us</li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="content-box">
+        <h1>Television Energy Consumption</h1>
+    <p>
+        This website presents energy consumption data for televisions using Australian Government data.
+        It helps households understand how different TV technologies, sizes, and brands affect electricity use.
+    </p>
+    </div>
+    <br><br>
+     <div class="responsive-svg-container">
+
+    </div>
+        <script defer src="https://d3js.org/d3.v7.min.js"></script>
+    <script defer src="d3script.js"></script>
+</main>
+
+
+<footer>
+    <p>© 2026 Nguyen Ngoc Bao Chau | GenAI used to assist with code generation</p>
+</footer>
+
+</body>
+</html>
