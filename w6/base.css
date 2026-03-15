@@ -1,0 +1,69 @@
+/* General page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main content */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 40px;
+}
+
+/* ---------------- */
+/* FILTER BUTTONS   */
+/* ---------------- */
+
+#filters_screen {
+    margin: 20px 0;
+}
+
+/* filter button style */
+.filter-btn {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    margin: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* hover effect */
+.filter-btn:hover {
+    background-color: #2980b9;
+}
+
+/* active filter */
+.filter-btn.active {
+    background-color: #1abc9c;
+}
+
+/* general buttons */
+button {
+    padding: 8px 14px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}

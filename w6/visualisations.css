@@ -1,0 +1,45 @@
+/* Responsive container of the svg element */
+.responsive-svg-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 596px) {
+    .responsive-svg-container {
+        margin-bottom: 20px;
+    }
+}
+
+/* Axis label styling for D3 charts */
+.axis-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    fill: #5a3e2b; /* Dark brown */
+}
+
+/* Axis lines */
+.axis path,
+.axis line {
+    stroke: #999;
+}
+
+/* Histogram bars */
+.bar {
+    fill: #3498db;
+}
+
+.bar:hover {
+    fill: #1abc9c;
+}
+
+/* Tooltip style */
+.tooltip {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    pointer-events: none;
+}
